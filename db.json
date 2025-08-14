@@ -1,0 +1,46 @@
+{
+  "users": [
+    { "id": 1, "name": "Rashmi Sirsath", "email": "rashmi@gmail.com" },
+    { "id": 2, "name": "Ananth Narayan", "email": "ananth@gmail.com" },
+    { "id": 3, "name": "Sonia Khanna", "email": "sonia@gmail.com" },
+    { "id": 4, "name": "Urvashi Solanki", "email": "urvashi@gmail.com" },
+    { "id": 5, "name": "Bhaskar Lokhande", "email": "bhaskar@gmail.com" },
+    { "id": 6, "name": "Neha Jain", "email": "neha@gmail.com" },
+    { "id": 7, "name": "Parag Singh", "email": "parag@gmail.com" },
+    { "id": 8, "name": "Shradha Sharma", "email": "shradha@gmail.com" },
+    { "id": 9, "name": "Prabhat Yadav", "email": "prabhat@gmail.com" }
+  ],
+  "policies": [
+    { "id": 1, "type": "Health", "userId": 1, "status": "active" },
+    { "id": 2, "type": "Life", "userId": 2, "status": "expired" },
+    { "id": 3, "type": "Car", "userId": 3, "status": "active" },
+    { "id": 4, "type": "Travel", "userId": 4, "status": "active" },
+    { "id": 5, "type": "Bike", "userId": 5, "status": "active" },
+    { "id": 6, "type": "Home", "userId": 6, "status": "pending" },
+    { "id": 7, "type": "Health", "userId": 7, "status": "active" },
+    { "id": 8, "type": "Life", "userId": 8, "status": "active" },
+    { "id": 9, "type": "Car", "userId": 9, "status": "expired" }
+  ],
+  "testimonials": [
+    { "id": 1, "userId": 1, "text": "I would like to thank the website 'insurance.emt.com' because of which I could get a good policy." },
+    { "id": 2, "userId": 2, "text": "Thank you for facilitating and following up on the policy. It's been a very pleasurable experience with you folks at EMT Insurance." },
+    { "id": 3, "userId": 3, "text": "Got a good deal without agent calling or speaking to anyone." },
+    { "id": 4, "userId": 4, "text": "I did not even need help from an agent! This is very good!" },
+    { "id": 5, "userId": 5, "text": "Thanks for correction done in time and really Appreciated....! GOOD TO HAVE EMT INSURANCE..!! LIFE IS EASY WITH YOU..!!" },
+    { "id": 6, "userId": 6, "text": "You are doing a great job. Proud to be a customer of EMT Insurance." },
+    { "id": 7, "userId": 7, "text": "The services provided by EMT Insurance are extremely helpful in making the right choices. Overall I had a good experience with EMT Insurance." },
+    { "id": 8, "userId": 8, "text": "Very simple to use, user-friendly website." },
+    { "id": 9, "userId": 9, "text": "Thanking you very much for your support for getting our policy quickly, I would appreciate your work." }
+  ],
+  "claims": [
+    { "id": 1, "policyId": 1, "userId": 1, "status": "approved", "amount": 50000 },
+    { "id": 2, "policyId": 2, "userId": 2, "status": "pending", "amount": 200000 },
+    { "id": 3, "policyId": 3, "userId": 3, "status": "rejected", "amount": 15000 },
+    { "id": 4, "policyId": 4, "userId": 4, "status": "approved", "amount": 10000 }
+  ],
+  "faqs": [
+    { "id": 1, "question": "How do I renew my policy?", "answer": "You can renew your policy online by logging into your account and selecting the policy you wish to renew." },
+    { "id": 2, "question": "What documents are required for a claim?", "answer": "You will need your policy number, ID proof, and claim form. Additional documents may be required depending on the claim type." },
+    { "id": 3, "question": "How can I contact customer support?", "answer": "You can contact us via email at support@insurance.emt.com or call our helpline at 1800-123-456." }
+  ]
+}

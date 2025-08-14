@@ -1,13 +1,19 @@
 .adCard {
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 220px;
     height: fit-content;
+    box-sizing: border-box;
     box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
     border-radius: 10px;
     padding: 20px;
     font-family: Poppins, sans-serif;
     position: relative;
-    margin-top: 60px;
+    margin: 40px auto 0 auto;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .adCard .content {
@@ -32,9 +38,26 @@
 }
 
 .adCard > .adImg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 180px;
-    /* z-index: -1; */
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .adCard {
+    max-width: 98vw;
+    padding: 10px;
+  }
+  .adCard > .adImg {
+    max-width: 120px;
+    width: 100%;
+  }
+  .adCard > h3 {
+    font-size: 14px;
+  }
+  .adCard p {
+    font-size: 12px;
+  }
 }

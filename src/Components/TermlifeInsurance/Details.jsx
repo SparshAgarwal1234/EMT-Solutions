@@ -8,7 +8,44 @@ import { useDispatch } from "react-redux";
 import { postBasicDetails } from "../../features/basicDetails/actionCreators";
 import { useNavigate } from "react-router-dom";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+const policyImages = [
+  "https://img.freepik.com/free-vector/insurance-policy-shield_603843-179.jpg?t=st=1739703570~exp=1739707170~hmac=136dcab26611871822fa8da01ac901bba7a882247a80ce8480957e84fad7872c",
+  "https://quickinsure.s3.ap-south-1.amazonaws.com/uploads/static_page/8ad075f8-c95f-441a-9033-1e182d50cd77/insurance%20policy%20endorsement.jpg",
+  "https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/28/full/1709120964-0595.jpg?im=FeatureCrop,size=(826,465)",
+  "https://static.vecteezy.com/system/resources/thumbnails/051/793/794/small_2x/2025-insurance-form-agreements-concept-businessman-signs-insurance-contracts-e-signing-digital-online-document-management-concerning-mortgage-loan-offer-for-and-house-insurance-photo.jpg",
+  "https://www.canarahsbclife.com/content/dam/chli/image/blog/term-insurance/spouse-term-insurance-thum-desktop.webp",
+  "https://www.reliancegeneral.co.in/siteassets/rgiclassets/images/blogs-images/health-insurance-policy-for-different-stages-of-life2.webp",
+  "https://www.avivaindia.com/sites/default/files/Renew-Your-term-Insurance.jpg",
+];
+
+function AutoImageSlider() {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIdx(i => (i + 1) % policyImages.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+  return (
+    <img
+      src={typeof policyImages[idx] === 'string' ? policyImages[idx] : policyImages[idx].default}
+      alt="policy"
+      style={{   
+        width: "95%",
+        height: "520px",
+        objectFit: "icon",
+        borderRadius: 12,
+        boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+        transition: "opacity 0.7s cubic-bezier(.4,0,.2,1)",
+        opacity: 1,
+        imageRendering: "auto",
+        filter: "none",
+      }}
+    />
+  );
+}
 import("./Details.css");
 
 const Details = () => {
@@ -48,30 +85,73 @@ const Details = () => {
     }
   };
 
+  // State for modals
+  const [showClaim, setShowClaim] = useState(false);
+  const [showCall, setShowCall] = useState(false);
+
+  // Handlers for modals
+  const handleClaimClick = () => setShowClaim(true);
+  const closeClaim = () => setShowClaim(false);
+  const handleCallClick = () => setShowCall(true);
+  const closeCall = () => setShowCall(false);
+
+  const handleClaimSubmit = (e) => {
+    e.preventDefault();
+    // TODO: Connect to backend
+    alert('Claim request submitted!');
+    closeClaim();
+  };
+
   return (
     <div className="main">
       <div className="navbar1">
         <div className="first">
-          <img src="policylogo.png" alt="Policy Bazaar" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAn8Q6P6ZFjRM3vLNyjPji8p0a7ZtMDvR9Kw&s"  alt="EMT" />
         </div>
         <img className="hand" src="money.png" alt="" />
-        <span className="claim">Claim Assistance</span>
+        <span className="claim" style={{cursor:'pointer'}} onClick={handleClaimClick}>Claim Assistance</span>
         <img
           className="call"
           src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/32/4a90e2/external-headphone-business-management-kmg-design-basic-outline-kmg-design.png"
           width="25"
           height="25"
           alt=""
+          style={{cursor:'pointer'}} onClick={handleCallClick}
         />
-        <span className="claim"> Call us</span>
+        <span className="claim" style={{cursor:'pointer'}} onClick={handleCallClick}> Call us</span>
       </div>
+      {/* Claim Modal */}
+      {showClaim && (
+        <div style={{position:'fixed',top:0,left:0,width:'100vw',height:'100vh',background:'rgba(0,0,0,0.3)',zIndex:1000,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{background:'white',borderRadius:8,padding:32,minWidth:320,boxShadow:'0 4px 24px rgba(0,0,0,0.18)',position:'relative'}}>
+            <button onClick={closeClaim} style={{position:'absolute',top:8,right:12,background:'none',border:'none',fontSize:22,cursor:'pointer',color:'#888'}}>&times;</button>
+            <h2 style={{marginTop:0,color:'#1976d2'}}>Claim Assistance</h2>
+            <form onSubmit={handleClaimSubmit} style={{display:'flex',flexDirection:'column',gap:12}}>
+              <input type="text" placeholder="Policy Number" required style={{padding:8,borderRadius:4,border:'1px solid #ccc'}} />
+              <input type="text" placeholder="Registered Name" required style={{padding:8,borderRadius:4,border:'1px solid #ccc'}} />
+              <input type="email" placeholder="Email" required style={{padding:8,borderRadius:4,border:'1px solid #ccc'}} />
+              <textarea placeholder="Describe your claim" required rows={4} style={{padding:8,borderRadius:4,border:'1px solid #ccc',resize:'vertical'}} />
+              <button type="submit" style={{background:'#1976d2',color:'white',border:'none',borderRadius:4,padding:'10px 0',fontWeight:600,fontSize:16,cursor:'pointer'}}>Submit Claim</button>
+            </form>
+          </div>
+        </div>
+      )}
+      {/* Call Modal */}
+      {showCall && (
+        <div style={{position:'fixed',top:0,left:0,width:'100vw',height:'100vh',background:'rgba(0,0,0,0.3)',zIndex:1000,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{background:'white',borderRadius:8,padding:32,minWidth:320,boxShadow:'0 4px 24px rgba(0,0,0,0.18)',position:'relative',textAlign:'center'}}>
+            <button onClick={closeCall} style={{position:'absolute',top:8,right:12,background:'none',border:'none',fontSize:22,cursor:'pointer',color:'#888'}}>&times;</button>
+            <h2 style={{marginTop:0,color:'#1976d2'}}>Call Us</h2>
+            <p style={{fontSize:18,margin:'20px 0'}}>Our support team is available 24x7</p>
+            <a href="tel:+911234567890" style={{fontSize:22,color:'#1976d2',fontWeight:700,textDecoration:'none'}}>+91 12345 67890</a>
+            <p style={{marginTop:16,fontSize:14,color:'#555'}}>Click the number to call (on mobile)</p>
+          </div>
+        </div>
+      )}
       <div className="form">
         <div className="left">
           <div className="img-b">
-            <img
-              src="https://termlife.policybazaar.com/assets/images/akshayimg.png"
-              alt="img"
-            />
+            <AutoImageSlider />
           </div>
         </div>
         <div className="right">
@@ -145,7 +225,7 @@ const Details = () => {
                 handleSubmit();
               }}
             >
-              View Free Quotes →
+              View Plans  →
             </Button>
           </form>
           <div className="secure">
@@ -158,7 +238,7 @@ const Details = () => {
           <br />
           <div className="policy">
             By clicking, you agree to our <span>Privacy policy</span>,
-            <span>Terms of Use</span> & + <span>Disclaimers</span>
+            <span>Terms of Use</span> & <span>Disclaimers</span>
           </div>
           <div className="whts">
             <img
@@ -227,7 +307,7 @@ const Details = () => {
                 on occurrence of any disability due to an accident.
               </li>
               <li>
-                Critical Illness rider offers an additional sum assured over the
+                Critical illness rider offers an additional sum assured over the
                 base plan offering if the life insured is diagnosed with one of
                 the critical illnesses mentioned in the rider.
               </li>

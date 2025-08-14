@@ -24,15 +24,28 @@
     cursor: pointer;
     border: 1px solid #999;
     position: fixed;
-    border-radius: 50%;
+    border-radius: 40%;
     right: calc(15% - 30px);
     top:15px
+    
 }
 
 .btn_know_more{
-    text-decoration: none;
-    color: #0065FF;
+    text-decoration:none;
+    color:red;
     font-size: 16px;
-    border: none;
+    border: 1px solid red;
     background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 2px 8px rgba(255,0,0,0.05);
+}
+
+.btn_know_more:hover {
+    color: #fff;
+    background-color: red;
+    box-shadow: 0 4px 16px rgba(255,0,0,0.15);
+    transform: translateY(-2px) scale(1.04);
+    border-color: darkred;
 }

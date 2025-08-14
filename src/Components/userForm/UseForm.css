@@ -6,7 +6,6 @@
   border: 1px solid black;
 }
   
-  
   .container > form {
       display: flex;
       margin: auto;
@@ -31,6 +30,87 @@
     cursor: pointer;
     height: 36px;
   }
+  .knowYourPlan {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.knowYourPlan:hover {
+  opacity: 0.8;
+}
+
+.plans-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.plans-popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.plans-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.plan-item {
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  color: #2c5282;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.select-plan-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
   .form-heading{
     width: 80%;
     margin: auto;
@@ -126,4 +206,49 @@ padding: 15px;
 } 
 .upgrade-radio-btn{
   margin-bottom: 30px;
+}
+
+.thank-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.thank-popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+  max-width: 400px;
+  width: 90%;
+}
+
+.thank-you-popup h2 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.thank-you-popup p {
+  color: #4a5568;
+  margin: 0.5rem 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

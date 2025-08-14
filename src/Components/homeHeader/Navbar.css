@@ -1,24 +1,24 @@
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 100px;
   display: flex;
 }
 .navbar .logo-s {
-  position: absolute;
-  height: 30px;
+  position: relative;
+  height: 80px;
   width: 184.5px;
-  left: 20%;
-  top: 15px;
+  left: 1%;
+  top: 10px;
   border-radius: 0px;
   cursor: pointer;
 }
 .navbar-insu {
-  color: #172b4d;
-  margin-left: 32%;
+  color: red;
+  margin-left: 21%;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  color: #172b4d;
+  color:red;
   margin-top: 4px;
   cursor: pointer;
   font-weight: 400;
@@ -28,7 +28,7 @@
   width: 15.414000179001828px;
   position: absolute;
   top: 25px;
-  margin: -1px 0 -4px 6.45%;
+  margin: -1px 0 -4px 8.45%;
   transition: transform 0.7s ease-in-out;
   cursor: pointer;
 }
@@ -40,21 +40,95 @@
   transform: rotate(180deg);
 }
 .navbar-rev {
-  margin-left: 3%;
+  margin-left: 10%;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  color: #172b4d;
+  color: red;
   margin-top: 4px;
   cursor: pointer;
+  position: relative;
+}
+
+.renew-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: #fff;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 0 0 8px 8px;
+  z-index: 10;
+  padding: 18px 20px 12px 20px;
+  margin-top: 8px;
+  flex-direction: column;
+  gap: 10px;
+}
+.renew-dropdown:hover .renew-dropdown-content,
+.renew-dropdown:focus-within .renew-dropdown-content {
+  display: flex;
+}
+.renew-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.renew-form input {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.renew-form button {
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.renew-form button:hover {
+  background: darkred;
+}
+.renew-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 13px;
+}
+.renew-list li {
+  margin-bottom: 4px;
+}
+.renew-faq {
+  color: red;
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .renew-dropdown-content {
+    min-width: 180px;
+    padding: 10px 8px 8px 8px;
+    font-size: 12px;
+  }
+  .renew-form input, .renew-form button {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
 }
 .navbar-vec1 {
-  color: #172b4d;
+  color: red;
   height: 12.1209991290089985px;
   width: 15.414000179001828px;
   position: absolute;
   top: 25px;
-  margin: -1px 0 -4px 6.05%;
+  margin: -1px 0 -4px 105%;
   transition: transform 0.7s ease-in-out;
   cursor: pointer;
 }
@@ -63,7 +137,7 @@
 }
 
 .new {
-  position: absolute;
+  position: relative;
   background: #f1f1f1;
   border-radius: 0px 0px 6px 6px;
 
@@ -72,10 +146,10 @@
   line-height: 16px;
   margin-left: 20%;
   margin-right: 10%;
-  margin-top: 0%;
+  margin-top: -10%;
   background-color: white;
-  width: 56%;
-  color: #253858;
+  width: 60%;
+  color: black;
 }
 
 .dropdown {
@@ -89,10 +163,12 @@
 .navbar-file {
   margin-left: 13%;
   cursor: pointer;
+  color: red;
 }
 .navbar-sur {
   margin-left: 1%;
   cursor: pointer;
+  color: red;
 }
 .navbar-vec2 {
   height: 12.1209991290089985px;
@@ -107,18 +183,28 @@
   transform: rotate(180deg);
 }
 
+
 .navbar-sign button {
   width: 70px;
   height: 30px;
   background-color: white;
-  color: #0663f6;
-  border-color: #0663f6;
+  color: red;
+  border: 1px solid red;
   border-radius: 5px;
   margin-left: 110%;
   margin-top: 15px;
-  transition: transform 0.2s;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
   cursor: pointer;
   font-size: 17px;
+  box-shadow: 0 2px 8px rgba(255,0,0,0.05);
+}
+
+.navbar-sign button:hover {
+  background-color: red;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255,0,0,0.15);
+  transform: translateY(-2px) scale(1.04);
+  border-color: darkred;
 }
 
 .navbar-sign button:hover {

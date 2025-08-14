@@ -5,13 +5,13 @@ export default function Navbar() {
        <div className="navbar-container">
           <div className="navbar-container-mid">
             <img
-              className="policybaazar-logo cursor"
-              src="https://buylifeinsurance.policybazaar.com/KotakeTermNew/images/web/pbLogo.svg"
+              className="logo cursor"
+              src="https://buylifeinsurance/KotakeTermNew/images/web/pbLogo.svg"
               alt=""
             />
             <div className="navbar-right cursor" >
               <img
-                src="https://buylifeinsurance.policybazaar.com/KotakeTermNew/images/web/callingIcon.svg"
+                src="https://buylifeinsurance/KotakeTermNew/images/web/callingIcon.svg"
                 alt=""
               />&nbsp;
               <span>Talk to an Expert</span>

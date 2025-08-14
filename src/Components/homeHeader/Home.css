@@ -17,11 +17,11 @@
   font-size: 14px;
   width: 150px;
   margin-left: 42px;
-  top: 230px;
+  top: 239px;
   position: absolute;
 }
 .home-up {
-  margin-left: 17%;
+  margin-left: 19%;
   color: #fff;
 }
 
@@ -29,17 +29,17 @@
   color: #ff9b2c;
   font-size: 14px;
   width: 150px;
-  margin-left: 585px;
-  top: 233px;
+  margin-left: 575px;
+  top: 239px;
   position: absolute;
 }
 .home-img {
   position: absolute;
   left: 528px;
-  top: 208px;
+  top: 253px;
 }
 .home-img2 {
-  top: 58px;
+  top: 55px;
   left: 800px;
   position: absolute;
 }
@@ -80,20 +80,19 @@
   position: absolute;
   width: 66%;
   height: 50%;
-  margin-top: 4%;
-  left: 12%;
+  margin-top: 7%;
+  margin-left: 0;
 }
 
 .home-tol {
   background: #fff;
-  margin-right: 15px;
+  margin-right: 75px;
   margin-bottom: 15px;
   margin-top: 15px;
   width: 10%;
   height: 75px;
   padding: 1%;
   text-align: center;
-
   float: right;
   border-radius: 5px;
 }
@@ -120,12 +119,12 @@
   display: inline-block;
 }
 .home-tm {
-  width: 86px;
+  width: 80px;
   font-size: 12px;
   font-weight: 400;
   color: #253858;
-  margin-top: -9%;
-  margin-left: 15%;
+  margin-top: -8%;
+  margin-left: 10%;
 }
 .home-tm1 {
   color: #0663f6;
@@ -143,7 +142,7 @@
 .home-tmc {
   color: #b404fd;
   font-size: 10px;
-  position: absolute;
+  position: relative;
   margin-left: 3%;
   margin-top: 0%;
 }
@@ -163,7 +162,7 @@
 .home-also {
   margin-top: 20%;
   margin-left: 20%;
-  color: #0663f6;
+  color: yellow;
   font-size: 13px;
   font-weight: 600;
 }
@@ -232,7 +231,7 @@
 }
 .home-d-text {
   width: 176px;
-  height: 84px;
+  height: 89px;
   font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI,
     Helvetica Neue, Arial, sans-serif;
   font-weight: 400;
@@ -366,7 +365,7 @@
 }
 
 .home-hover-div {
-  position: absolute;
+  position: relative;
   width: 1136px;
   height: 728px;
   background: #f1f1f1;

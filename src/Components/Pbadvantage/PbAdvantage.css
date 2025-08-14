@@ -12,7 +12,7 @@
 .span_hr{
     height: 4px;
     width: 70px;
-    background-color: #0065FF;
+    background-color: red;
 }
 .text_div{
     width: 610.5px;
@@ -25,7 +25,7 @@
     display: flex;
     margin: 50px 0 0 0;
     width: 1110px;
-    height: 220px;
+    height: 250px;
 }
 .inner_cont_div{
     width: 209px;
@@ -35,14 +35,14 @@
     display: inline-block;
     text-align: left;
     font-size: 16px;
-    border: 0.001px solid #D3DEDC;
+    border: 1px solid #D3DEDC;
     overflow: hidden;
     transition: transform .5s ease;
 }
 .inner_cont_div:hover {
     transform: scale(1.1);
     font-weight: 700;
-    border: none;
+    border: 1px solid #D3DEDC;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .title_p{

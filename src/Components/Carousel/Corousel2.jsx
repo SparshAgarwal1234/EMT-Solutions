@@ -28,16 +28,16 @@ export const SlidesCarousel2 = () => {
               <div className="child_slides">
                 <p className="title_text">Rashmi Sirsath</p>
                 <p className="para_text">
-                  I would like to thank the website 'www.policybazar.com'
+                  I would like to thank the website 'www.insurance.emt.com'
                   because of which i could get a good policy.
                 </p>
               </div>
               <div className="child_slides">
                 <p className="title_text">Ananth Narayan</p>
                 <p className="para_text">
-                  Thank tou for faciliting and following up on the policy. its
+                  Thank you for facilitating and following up on the policy. It's
                   been a very pleasurable experience with you folks at
-                  Policybazar.
+                  EMT Insurance.
                 </p>
               </div>
               <div className="child_slides">
@@ -60,8 +60,8 @@ export const SlidesCarousel2 = () => {
               <div className="child_slides">
                 <p className="title_text">Bhaskar Lokhande</p>
                 <p className="para_text">
-                  Thanks for correctiction done in time and really
-                  Appreciated....! GOOD TO HAVE POLICYBAZAR..!! LIFE IS EASY
+                  Thanks for correction done in time and really
+                  Appreciated....! GOOD TO HAVE EMT INSURANCE..!! LIFE IS EASY
                   WITH YOU..!!
                 </p>
               </div>
@@ -78,24 +78,24 @@ export const SlidesCarousel2 = () => {
             {" "}
             <div className="parent_slides">
               <div className="child_slides">
-                <p className="title_text">Parag Lele</p>
+                <p className="title_text">Parag Singh</p>
                 <p className="para_text">
-                  The services provided by Policibazar are extreamly helpful in
+                  The services provided by EMT Insurance are extremely helpful in
                   making the right choices. Overall I had a good experience with
-                  Policybazar.
+                  EMT Insurance.
                 </p>
               </div>
               <div className="child_slides">
-                <p className="title_text">Shradhha Sharma </p>
+                <p className="title_text">Shradha Sharma </p>
                 <p className="para_text">
-                  Very simpal o use, friendly website.
+                  Very simple to use, user-friendly website.
                 </p>
               </div>
               <div className="child_slides">
                 <p className="title_text">Prabhat Yadav</p>
                 <p className="para_text">
                   Thanking you very much for your support for getting our policy
-                  quickly, i would appreacate your work.
+                  quickly, I would appreaciate your work.
                 </p>
               </div>
             </div>

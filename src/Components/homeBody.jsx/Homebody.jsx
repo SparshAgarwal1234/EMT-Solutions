@@ -64,105 +64,125 @@ function Homebody() {
             </p>
           </div>
           <div className="home-maind">
-            <div className="home-tol">
+            {/* <div className="home-tol">
               <img src={umre} alt="one" />
               <p className="home-tm">Guaranteed Return Plan </p>
               <p className="home-tm1-5">
                 <spam className="home-dot"> </spam> Save tax
               </p>
+            </div> */}
+            {/* <div className="home-tol">
+              <Link to="/family-health-insurance">
+                <img src={Fam1} alt="one" />
+                <p className="home-tm">Family Health Insurance</p>
+                <p className="home-tm1-5">
+                  <spam className="home-dot"> </spam> New
+                </p>
+              </Link>
+            </div> */}
+            {/* <div className="home-tol">
+              <Link to="/two-wheeler-insurance">
+                <img src={bk} alt="one" />
+                <p className="home-tm">2 Wheeler Insurance </p>
+                <p className="home-tm1-5">
+                  <spam className="home-dot"> </spam>Instant Policy
+                </p>
+              </Link>
+            </div> */}
+            {/* <div className="home-tol">
+              <Link to="/car-insurance">
+                <img src={car1} alt="one" />
+                <p className="home-tm">Car Insurance</p>
+                <p className="home-tm1-5">
+                  <spam className="home-dot"> </spam> Instant Policy
+                </p>
+              </Link>
+            </div> */}
+            {/* <div className="home-tol">
+              <Link to="/investment-plans">
+                <img src={bk} alt="one" />
+                <p className="home-tm">Investment Plans </p>
+                <p className="home-tm1-5">
+                  <spam className="home-dot"> </spam>
+                  Save Tax
+                </p>
+              </Link>
             </div>
             <div className="home-tol">
-              <img src={Fam1} alt="one" />
-              <p className="home-tm">Family Health Insurance</p>
-              <p className="home-tm1-5">
-                <spam className="home-dot"> </spam> New
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={bk} alt="one" />
-              <p className="home-tm">2 Wheeler Insurance </p>
-              <p className="home-tm1-5">
-                <spam className="home-dot"> </spam>Instant Policy
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={car1} alt="one" />
-              <p className="home-tm">Car Insurance</p>
-              <p className="home-tm1-5">
-                <spam className="home-dot"> </spam> Instant Policy
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={bk} alt="one" />
-              <p className="home-tm">Investment Plans </p>
-              <p className="home-tm1-5">
-                <spam className="home-dot"> </spam>
-                Save Tax
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={umre} alt="one" />
-              <p className="home-tm">Health Insurance </p>
-              <p className="home-tm1-5">
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
-            </div>
+              <Link to="/health-insurance">
+                <img src={umre} alt="one" />
+                <p className="home-tm">Health Insurance </p>
+                <p className="home-tm1-5">
+                  <spam className="home-dot"> </spam> Covers covid-19
+                </p>
+              </Link>
+            </div> */}
             <div className="home-tol">
               <img src={umre} alt="one" />
               <Link to={"/details"}>
                 <p className="home-tm">Term Life Insurance </p>
+                <p className="home-tm1-5">  
+                  <spam className="home-dot"> </spam> Covers covid-19
+                </p>
+              </Link>
+            </div>
+            <div className="home-tol">
+              <Link to="/all-products">
+                <img src={box} alt="one" />
+                <p className="home-tm">Professional Idemnity Insurance</p>
+              </Link>
+            </div>
+            <div className="home-tol">
+              <Link to="health-insurance">
+                <img src={Fam1}  alt="one" />
+                <p className="home-tm"> Health Insurance </p>
+              </Link>
+            </div>
+            {/* <div className="home-tol">
+              <Link to="/group-health-insurance">
+                <img src={pepl} alt="one" />
+                <p className="home-tm">Group Health Insurance</p>
+                <p className="home-tmc">
+                  <spam className="home-dot1"> </spam> New
+                </p>
+              </Link>
+            </div>
+            <div className="home-tol">
+              <Link to="/retirement-plans">
+                <img src={umre} alt="one" />
+                <p className="home-tm">Retirement Plans </p>
+                <p className="home-tmc">
+                  <spam className="home-dot1"> </spam> New
+                </p>
+              </Link>
+            </div>
+            <div className="home-tol">
+              <Link to="/child-savings-plans">
+                <img src={bacha} alt="one" />
+                <p className="home-tm">Child Savings Plans</p>
+                <p className="home-tmc">
+                  <spam className="home-dot1"> </spam> New
+                </p>
+              </Link>
+            </div>
+            <div className="home-tol">
+              <Link to="/travel-insurance">
+                <img src={tra} alt="one" />
+                <p className="home-tm">Travel Insurance </p>
                 <p className="home-tm1-5">
                   <spam className="home-dot"> </spam> Covers covid-19
                 </p>
               </Link>
             </div>
             <div className="home-tol">
-              <img src={box} alt="one" />
-              <p className="home-tm">View All Products </p>
-            </div>
-            <div className="home-tol">
-              <img src={cr} alt="one" />
-              <p className="home-tm"> 1 Cr Health Insurance </p>
-            </div>
-            <div className="home-tol">
-              <img src={pepl} alt="one" />
-              <p className="home-tm">Group Health Insurance</p>
-              <p className="home-tmc">
-                <spam className="home-dot1"> </spam> New
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={umre} alt="one" />
-              <p className="home-tm">Retirement Plans </p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={bacha} alt="one" />
-              <p className="home-tm">Child Savings Plans</p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={tra} alt="one" />
-              <p className="home-tm">Travel Insurance </p>
-              <p className="home-tm1-5">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
-            </div>
-            <div className="home-tol">
-              <img src={umre} alt="one" />
-              <p className="home-tm">Saral Jeevan Bima </p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
-            </div>
+              <Link to="/spouse term plan">
+                <img src={umre} alt="one" />
+                <p className="home-tm">Spouse Term Plan </p>
+                <p className="home-tmc">
+                  <spam className="home-dot1"> </spam> New
+                </p>
+              </Link>
+            </div> */}
           </div>
         </div>
         <p className="home-also">ALSO BUY</p>

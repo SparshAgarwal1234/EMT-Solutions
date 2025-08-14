@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
 }
-.policybaazar-logo{
+.logo{
     width: 150px;
 }
 .review-heading2{
@@ -325,13 +325,14 @@
     align-items: center;
     justify-content: space-between;
 }
-.checkout-btn>Button{
-    min-width:200px ;
+.checkout-btn button,
+.checkout-btn .MuiButton-root {
+    min-width: 200px;
     height: 50px;
     font-size: 18px;
     font-weight: 700;
-    background-color:#E64A19 !important ;
-    color: white;
+    background-color: #E64A19 !important;
+    color: white !important;
 }
 .cursor{
     cursor: pointer;

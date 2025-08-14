@@ -6,7 +6,7 @@ export const QuotesFooter = () => {
     <div className="quotes-footer-container">
       <div>
         <P>
-          #Policybazaar is acting only as a facilitator and claims settlement
+          #EMT is acting only as a facilitator and claims settlement
           shall be at the sole discretion of the Insurer
         </P>
 
@@ -23,19 +23,10 @@ export const QuotesFooter = () => {
         </P>
 
         <P>
-          Policybazaar Insurance Brokers Private Limited (formerly known as
-          Policybazaar Insurance Web Aggregator Private Limited) CIN:
-          U74999HR2014PTC053454 | Registered Office - Plot No.119, Sector - 44,
-          Gurgaon, Haryana – 122001 Policybazaar is now registered as a Direct
-          Broker | Registration No. 742, Registration Code No. IRDA/ DB 797/ 19,
-          Valid till 09/06/2024, License category- Direct Broker (Life &
-          General) | Visitors are hereby informed that their information
-          submitted on the website may be shared with insurers. Product
-          information is authentic and solely based on the information received
-          from the insurers.
+          ...
         </P>
 
-        <P>© Copyright 2008-2022 policybazaar.com. All Rights Reserved.</P>
+        <P>© Copyright insurance.emt.com. All Rights Reserved.</P>
       </div>
     </div>
   );

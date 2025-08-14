@@ -3,7 +3,7 @@ import "./AdCard.css";
 
 export const AdCard = () => {
   const data = {
-    title: "Why Buy From Policybazaar?",
+    title: "Why Buy From EMT?",
     content: [
       "Best Prices",
       "Dedicated Claim Assistance",
